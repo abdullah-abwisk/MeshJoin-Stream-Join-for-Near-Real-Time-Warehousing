@@ -1,0 +1,22 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2706
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Metro Cash and Carry Warehouse using MeshJoin README\
+\
+Step by step procedure to operate project:\
+1. Run Transactional_MasterData Generator.sql file in mySQL Workbench to create source db with transactions, products, and customers table.\
+2. Run createDW file to create Data Warehouse for transactional data using Star Schema.\
+3. Unzip meshJoin.zip file and load the unzipped folder into eclipse IDE as a project.\
+4. Right click the project name in the side and click properties. \
+5. Click Java Build Path in the options to the left and then click Libraries in the menu.\
+6. Click on \'93Classpath\'94 below and then click on Add External JARs\'85 to the right.\
+7. Select /mysql-connector-j-8.0.31/mysql-connector-j-8.0.31.jar file and click Apply and Close below.\
+8. Click run icon at the top or control + shift + f11 to run the meshJoin algorithm.\
+9. Enter y to input your own credentials of n to use default connection credentials for the database and warehouse.\
+10. Wait for this output: \'93All transactions loaded into Warehouse.\'94.\
+11. Now your data is loaded in the Warehouse.\
+12. Now run queries in the queriesDW.sql file query by query.}
